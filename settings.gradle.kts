@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "KaKaoImageSearch"
-include ':app'
-include ':data'
+include(":app")
+include(":data")
