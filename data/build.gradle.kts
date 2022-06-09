@@ -12,6 +12,7 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
     implementation("com.google.code.gson:gson:2.9.0")
 
     testImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")
