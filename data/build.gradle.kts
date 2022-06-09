@@ -17,4 +17,7 @@ dependencies {
     testImplementation("com.squareup.okhttp3:mockwebserver:4.9.3")
 
     implementation("io.reactivex.rxjava3:rxjava:3.1.5")
+
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("com.google.truth:truth:1.1.3")
 }
