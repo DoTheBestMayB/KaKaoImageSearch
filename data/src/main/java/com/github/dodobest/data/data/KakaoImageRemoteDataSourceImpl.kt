@@ -12,7 +12,7 @@ class KakaoImageRemoteDataSourceImpl(
         sort: String,
         page: Int,
         size: Int,
-    ): Single<List<KakaoImageSearchResponse>> {
+    ): Single<KakaoImageSearchResponse> {
         return kakaoAPI.searchImage(query, sort, page, size)
     }
 }

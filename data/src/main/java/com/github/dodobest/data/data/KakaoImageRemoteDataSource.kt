@@ -10,5 +10,5 @@ interface KakaoImageRemoteDataSource {
         sort: String = "accuracy",
         page: Int = 1,
         size: Int = 80,
-    ) : Single<List<KakaoImageSearchResponse>>
+    ) : Single<KakaoImageSearchResponse>
 }

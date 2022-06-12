@@ -6,5 +6,5 @@ data class KakaoImageSearchResponse(
     @SerializedName("meta")
     val meta: KakaoImageSearchResponseMeta,
     @SerializedName("documents")
-    val documents: KakaoImageSearchResponseDocuments,
+    val documents: List<KakaoImageSearchResponseDocument>,
 )

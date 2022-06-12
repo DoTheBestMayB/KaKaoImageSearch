@@ -15,7 +15,7 @@ interface KakaoAPI {
         @Query("sort") sort: String = "accuracy",
         @Query("page") page: Int = 1,
         @Query("size") size: Int = 80,
-    ) : Single<List<KakaoImageSearchResponse>>
+    ) : Single<KakaoImageSearchResponse>
 
     companion object {
         const val REST_API_KEY = ""

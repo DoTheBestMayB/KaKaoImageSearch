@@ -1,9 +1,9 @@
 package com.github.dodobest.data.model
 
 import com.google.gson.annotations.SerializedName
-import java.time.LocalDateTime
+import java.util.*
 
-data class KakaoImageSearchResponseDocuments(
+data class KakaoImageSearchResponseDocument(
     @SerializedName("collection")
     val collection: String,
     @SerializedName("thumbnail_url")
@@ -19,5 +19,5 @@ data class KakaoImageSearchResponseDocuments(
     @SerializedName("doc_url")
     val docUrl: String,
     @SerializedName("datetime")
-    val dateTime: LocalDateTime,
+    val dateTime: Date,
 )
