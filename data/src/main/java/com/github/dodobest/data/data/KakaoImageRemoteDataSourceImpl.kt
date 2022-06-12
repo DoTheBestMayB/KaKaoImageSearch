@@ -3,7 +3,7 @@ package com.github.dodobest.data.data
 import com.github.dodobest.data.model.KakaoImageSearchResponse
 import io.reactivex.rxjava3.core.Single
 
-class KakaoImageRemoteDataSourceImpl(
+internal class KakaoImageRemoteDataSourceImpl(
     private val kakaoAPI: KakaoAPI,
 ) : KakaoImageRemoteDataSource {
 

@@ -6,7 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.Query
 
-interface KakaoAPI {
+internal interface KakaoAPI {
 
     @Headers("Authorization: KakaoAK $REST_API_KEY")
     @GET("/v2/search/image")

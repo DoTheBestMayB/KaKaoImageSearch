@@ -3,7 +3,7 @@ package com.github.dodobest.data.model
 import com.google.gson.annotations.SerializedName
 import java.util.*
 
-data class KakaoImageSearchResponseDocument(
+internal data class KakaoImageSearchResponseDocument(
     @SerializedName("collection")
     val collection: String,
     @SerializedName("thumbnail_url")
