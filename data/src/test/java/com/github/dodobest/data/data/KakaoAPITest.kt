@@ -41,7 +41,7 @@ class KakaoAPITest {
         // when - then
         val expected = Gson().fromJson(json, KakaoImageSearchResponse::class.java)
 
-        service.searchImage(query = QUERY, size = searchSize)
+        service.searchImage(query = QUERY, size = SEARCH_SIZE)
             .test()
             .awaitDone(1L, TimeUnit.SECONDS)
             .assertValue(expected)
@@ -49,6 +49,6 @@ class KakaoAPITest {
 
     companion object {
         const val QUERY = "사과"
-        private const val searchSize = 5
+        private const val SEARCH_SIZE = 5
     }
 }
