@@ -47,7 +47,7 @@ class KakaoAPITest {
     }
 
     companion object {
-        const val QUERY = "사과"
+        private const val QUERY = "사과"
         private const val SEARCH_SIZE = 5
     }
 }
