@@ -37,10 +37,9 @@ class KakaoAPITest {
         val json = File("src/test/resources/imageSearchSuccessData.json").readText()
         val response = MockResponse().setBody(json)
         server.enqueue(response)
-
-        // when - then
         val expected = Gson().fromJson(json, KakaoImageSearchResponse::class.java)
 
+        // when - then
         service.searchImage(query = QUERY, size = SEARCH_SIZE)
             .test()
             .awaitDone(1L, TimeUnit.SECONDS)
